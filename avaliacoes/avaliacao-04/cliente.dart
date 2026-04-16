@@ -17,7 +17,7 @@ void main() async {
     // Conecta ao servidor
     print('Conectando ao servidor em $serverAddress:$serverPort...');
     Socket socket = await Socket.connect(serverAddress, serverPort);
-    print('✅ Conectado ao servidor com sucesso!\n');
+    print('Conectado ao servidor com sucesso!\n');
     
     // Escuta respostas do servidor (opcional)
     socket.listen(
@@ -67,7 +67,7 @@ void main() async {
     });
     
     // Mantém o programa rodando até Ctrl+C
-    print('\n📊 Monitorando temperatura... (Ctrl+C para encerrar)');
+    print('\nMonitorando temperatura... (Ctrl+C para encerrar)');
     print('================================================\n');
     
     // Aguarda sinal de interrupção
@@ -77,7 +77,7 @@ void main() async {
     exit(0);
     
   } catch (e) {
-    print('❌ Erro ao conectar ao servidor: $e');
+    print('Erro ao conectar ao servidor: $e');
     print('Verifique se o servidor está rodando na porta $serverPort');
     exit(1);
   }
