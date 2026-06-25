@@ -1,6 +1,3 @@
-
-// 14-agregacao.dart  
-// Agregação e Composição
 import 'dart:convert';
 
 class Dependente {
@@ -76,8 +73,7 @@ void main() {
   List<Funcionario> listaFuncionarios = [func1, func2, func3, func4];
   
   EquipeProjeto equipe = EquipeProjeto("Sistema de Gestão Empresarial", listaFuncionarios);
-  
-   Equipe Projeto.
+  // Equipe Projeto.   // ✅ Removido ou comentado
   String jsonString = jsonEncode(equipe.toJson());
   print("Equipe Projeto em formato JSON:");
   print(jsonString);
